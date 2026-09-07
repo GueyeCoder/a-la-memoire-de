@@ -4,7 +4,7 @@ import { getCandleCount } from '@/lib/actions'
 import ParticleEffect from '@/components/ParticleEffect'
 import CandleFlame from '@/components/CandleFlame'
 
-export const revalidate = 60 // Revalidate every minute
+export const dynamic = 'force-dynamic'
 
 export default async function HomePage() {
   const candleCount = await getCandleCount()
